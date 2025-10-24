@@ -1,0 +1,238 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #cb6464;
+  color: #131111;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #bcdbf6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 70px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e91e63;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e91e63;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: #1e0606;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 239, 239);
+}
+
+.hero-content {
+  position: relative;
+  color: #2d0202;
+  z-index: 10;
+  animation: fadeInUp 1s ease;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+.btn {
+  background: #ff0404;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0d0396;
+  transform: scale(1.05);
+}
+
+/* About */
+.about {
+  padding: 100px 60px;
+  background: #f7c4c4;
+  color: #1d0101;
+  text-align: center;
+  margin: 100%px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e91e63;
+}
+
+/* Services */
+.services {
+  padding: 100px 60px;
+  text-align: center;
+  background: #fff;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.services .sub {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #f1dfdf;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #e91e63;
+  margin: 15px 0 5px;
+}
+
+.card p {
+  padding: 0 20px 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Contact */
+.contact {
+  padding: 100px 60px;
+  background: #f2eaea;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #e91e63;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.contact .info {
+  margin-top: 25px;
+}
+
+.contact .info i {
+  color: #e91e63;
+  margin-right: 10px;
+}
+
+.contact a.btn,
+.shop-now {
+  margin-top: 15px;
+  display: inline-block;
+  background: #009688;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.shop-now:hover {
+  background: #00796b;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
